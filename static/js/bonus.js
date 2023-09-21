@@ -48,7 +48,7 @@ function gaugeChart(data) {
 
   let trace = [{ type: 'scatter',
     x: [0], y:[0],
-    marker: {size: 25, color:'orange'},
+    marker: {size: 33, color:'orange'},
     showlegend: false,
     name: 'WASH FREQ',
     text: data.wfreq,
@@ -57,12 +57,12 @@ function gaugeChart(data) {
       rotation: 90,
       text: ['8-9', '7-8', '6-7', '5-6', '4-5', '3-4', '2-3', '1-2', '0-1',''],
       textinfo: 'text',
-      textposition:'inside',
-      textfont:{ size : 13, },
+      textposition: 'inside',
+      textfont:{ size : 12, },
       marker: {colors:[...arrColorsG]},
       labels: ['8-9', '7-8', '6-7', '5-6', '4-5', '3-4', '2-3', '2-1', '0-1',''],
       hoverinfo: 'text',
-      hole: .5,
+      hole: .4,
       type: 'pie',
       showlegend: false
     }];
@@ -71,13 +71,13 @@ function gaugeChart(data) {
     shapes:[{
       type: 'path',
       path: path,
-      fillcolor: 'orange',
-      line: { color: 'orange' }
+      fillcolor: 'red',
+      line: { color: 'red' }
     }],
 
     title: '<b>Belly Button Washing Frequency</b> <br> Scrub(s) Per Week',
     height: 400,
-    width: 550,
+    width: 400,
     xaxis: {zeroline:false, showticklabels:false, showgrid: false, range: [-1, 1]},
     yaxis: {zeroline:false, showticklabels:false, showgrid: false, range: [-1, 1]},
   };

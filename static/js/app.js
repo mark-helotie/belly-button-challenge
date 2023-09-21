@@ -1,6 +1,6 @@
 // Define URL to read in data
-const url = "./samples.json";
-// const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
+// const url = "./samples.json";
+const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
 
 function Read(sample) {
     d3.json(url).then((data) => {
@@ -35,10 +35,18 @@ function Charts(sample) {
             orientation: "h"
         }];
         var BarChartLayout = {
-            title: "Top 10 OTUs",
-            margin: { t:40, l: 120}
+            title: "<b>Top 10 OTUs</b>",
+            width: 420,
+            height: 400,
+            margin: {
+                l: 100,
+                r: 20,
+                b: 20,
+                t: 80,
+                pad: 4
+            }
         };
-        Plotly.newPlot("bar", BarChartData, BarChartLayout);
+        Plotly.newPlot("bar", BarChartData, BarChartLayout, {responsive: true});
       
     // Bubble chart
         var BubbleChartData = [
@@ -55,7 +63,7 @@ function Charts(sample) {
             xaxis: { title: "OTU ID"},
             hovermode: 'closest',
         };
-        Plotly.newPlot("bubble", BubbleChartData, BubbleChartLayout);
+        Plotly.newPlot("bubble", BubbleChartData, BubbleChartLayout, {responsive: true});
       
     })};
     
