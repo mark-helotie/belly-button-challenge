@@ -7,6 +7,6 @@ In this assignment, you will build an interactive dashboard to explore the Belly
 The dataset can be found at http://robdunnlab.com/projects/belly-button-biodiversity/
 ------------------------------------------------------------------------------------
 
-The website for this challenge is hosted here on GitHub Pages.
+The website for this challenge is hosted here locally on GitHub Pages.
 
 https://mark-helotie.github.io/belly-button-challenge/
