@@ -10,3 +10,5 @@ The dataset can be found at http://robdunnlab.com/projects/belly-button-biodiver
 The website for this challenge is hosted here locally on GitHub Pages.
 
 https://mark-helotie.github.io/belly-button-challenge/
+
+![image](https://github.com/mark-helotie/belly-button-challenge/assets/43053988/aad8a749-2d4d-414a-8c17-3ebecaccbdf5)
